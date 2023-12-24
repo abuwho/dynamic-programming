@@ -17,6 +17,8 @@ const fib = (n) =>  {
 
 // Memoized version
 // Use JS object, keys will be args to func, value will be the return value
+// Time: O(n)
+// Space: O(n)
 const dynamicFib = (n, memo = {}) => {
     if (n in memo) return memo[n];
     if (n <= 2) return 1;
